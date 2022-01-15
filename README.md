@@ -1,3 +1,3 @@
 # Quantum
 
-Quantum Simulator
+Deno Quantum Computing Toolkit

@@ -1,9 +1,14 @@
-export interface Gate {
-    type: GateType
+export interface Gate extends Instruction {
+    // type: GateType
 }
 
-export enum GateType {
+export enum InstructionType {
     XGate,
     HGate,
-    ZGate
+    ZGate,
+    Measure
+}
+
+export interface Instruction {
+    type: InstructionType
 }

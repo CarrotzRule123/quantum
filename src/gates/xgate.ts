@@ -1,9 +1,12 @@
-import { Gate, GateType } from "../types.ts";
+import { Qubit } from "../qubit.ts";
+import { Gate, InstructionType } from "../types.ts";
 
 export class XGate implements Gate {
-    type: GateType.XGate
+    type: InstructionType.XGate
+    qubit: Qubit
 
-    constructor() {
-        this.type = GateType.XGate
+    constructor(qubit: Qubit) {
+        this.type = InstructionType.XGate
+        this.qubit = qubit
     }
 }

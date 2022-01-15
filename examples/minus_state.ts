@@ -1,5 +1,6 @@
 import { QuantumCircuit } from "../mod.ts";
 
-const circ = new QuantumCircuit(1)
-circ.x(0)
-circ.h(0)
+const qc = new QuantumCircuit(1, 1)
+qc.x(0)
+qc.h(0)
+qc.measure(0, 0)
